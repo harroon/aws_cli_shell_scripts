@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Retrieve the current public IP address
+public_ip=$(curl -s https://api.ipify.org)
+
 # Function to check and update security group
 check_and_update_security_group() {
     echo "<<===================================================>>"
@@ -47,8 +50,6 @@ check_and_update_security_group() {
 }
 
 # Parameters to Call function for security group
-# Retrieve the current public IP address
-public_ip=$(curl -s https://api.ipify.org)
 security_group_name="security-group-name"
 region="us-west-1"
 server_detail="Server-Name"
