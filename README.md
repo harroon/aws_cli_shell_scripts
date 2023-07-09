@@ -28,9 +28,9 @@ Save the modified script.
 
 Run the script: ./aws-security-group-ip-updater.sh
 
-The script will retrieve your current public IP address, check if it matches the IP already added in the security group rule using description, and update it if necessary.
+The script will retrieve your current public IP address, check if it matches the IP already added in the security group rule for TCP port 22 (which is used for ssh) using description, and update it if necessary.
 
-You can schedule the scripts to run at regular intervals using cron or any other task scheduler of your choice.
+You can schedule the scripts to run at regular intervals using cron or any other task scheduler of your choice. Or you can modify the script according to your requirements.
 
 Contributing
 
